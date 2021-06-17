@@ -35,7 +35,7 @@
                     
                         <!-- Customer Details -->
                         <Customer>
-                          
+                          <input type="text">
                             <FirstName id= "First Name"></FirstName>
                             <LastName id= "Last Name"></LastName>
                             <Email  id="Email">hannoa@paygate.co.za</Email>
@@ -43,7 +43,7 @@
 				
 	
 	            <MerchantOrderId>utiliapp_41250008624_20210120104336</MerchantOrderId>
-                    <input type="text">
+                    
                     <Currency id="Currency">ZAR</Currency>
                     <Amount id="Amaount">25000</Amount>
                     <BillingDetails  id= "Bill details">
@@ -51,7 +51,7 @@
                             <Address>
                                 <Country>ZAF</Country>
                             </Address>
-                        </Customer>
+                       
                         <!-- Address Details -->
                         <Address>
                             <Country>ZAF</Country>
@@ -59,6 +59,7 @@
                     </BillingDetails>
                     <Locale>en</Locale>
 	            </input>
+	         </Customer>	
                 </Order>
 			</WebPaymentRequest>
 		</SinglePaymentRequest>

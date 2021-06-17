@@ -10,12 +10,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <table border="0">
     <xsl:for-each select="tool/field">
     <tr>
+       <input type="text">
       <td><xsl:value-of select="@id"/></td>
-      <td>
-      <input type="text">
-      <xsl:attribute name="id">
-        <xsl:value-of select="@id" />
-      </xsl:attribute>
+  
+     
+     
      
      
       </input>

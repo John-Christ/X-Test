@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-  <?xml-stylesheet type="text/xsl" href="pay.xsl"?>
+  <?xml-stylesheet type="text/xsl" href="tool.xsl"?>
      <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
     	<SinglePaymentRequest xmlns="http://www.paygate.co.za/PayHOST">

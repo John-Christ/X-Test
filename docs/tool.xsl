@@ -17,9 +17,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:value-of select="@id" />
       </xsl:attribute>
      
-      <xsl:attribute name="value">
-        <xsl:value-of select="value" />
-      </xsl:attribute>
+     
       </input>
       </td>
     </tr>

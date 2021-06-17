@@ -44,7 +44,7 @@
                             <LastName id= "Last Name"></LastName>
                             <Email  id="Email">hannoa@paygate.co.za</Email>
                             <!-- Address Details -->
-                          </input>
+                          
                             <Address>
                                 <Country>ZAF</Country>
                             </Address>
@@ -55,6 +55,7 @@
                         </Address>
                     </BillingDetails>
                     <Locale>en</Locale>
+	            </input>
                 </Order>
 			</WebPaymentRequest>
 		</SinglePaymentRequest>

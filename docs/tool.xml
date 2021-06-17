@@ -32,11 +32,7 @@
                 </Redirect>
                 <!-- Order Details -->
                 <Order>
-                    <MerchantOrderId>utiliapp_41250008624_20210120104336</MerchantOrderId>
-                    <input type="text">
-                    <Currency id="Currency">ZAR</Currency>
-                    <Amount id="Amaount">25000</Amount>
-                    <BillingDetails  id= "Bill details">
+                    
                         <!-- Customer Details -->
                         <Customer>
                           
@@ -44,6 +40,13 @@
                             <LastName id= "Last Name"></LastName>
                             <Email  id="Email">hannoa@paygate.co.za</Email>
                             <!-- Address Details -->
+				
+	
+	            <MerchantOrderId>utiliapp_41250008624_20210120104336</MerchantOrderId>
+                    <input type="text">
+                    <Currency id="Currency">ZAR</Currency>
+                    <Amount id="Amaount">25000</Amount>
+                    <BillingDetails  id= "Bill details">
                           
                             <Address>
                                 <Country>ZAF</Country>

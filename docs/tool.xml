@@ -56,7 +56,6 @@
                     </BillingDetails>
                     <Locale>en</Locale>
                 </Order>
-			<input type="submit" value="Submit" id="submit">
 			</WebPaymentRequest>
 		</SinglePaymentRequest>
 	</SOAP-ENV:Body>

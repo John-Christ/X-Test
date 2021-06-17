@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="tool.xsl"?>
-
-<tool>
-  <field id="prodName">
-    <value>HAMMER HG2606</value>
-  </field>
-  <field id="prodNo">
-    <value>32456240</value>
-  </field>
-  <field id="price">
-    <value>$30.00</value>
-  </field>
-</tool>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <?xml-stylesheet type="text/xsl" href="pay.xsl"?>
+     <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+    	<SinglePaymentRequest xmlns="http://www.paygate.co.za/PayHOST">
+	    	<WebPaymentRequest>
+				 <!-- Account Details -->
+                <Account>
+                    <PayGateId>1042960100019</PayGateId>
+                    <Password>reve403B</Password>
+                </Account>
+                <!-- Customer Details -->
+                <Customer>
+                    <FirstName ></FirstName>
+                    <LastName></LastName>
+                    <Email>hannoa@paygate.co.za</Email>
+                    <!-- Address Details -->
+                    <Address>
+                        <Country>ZAF</Country>
+                    </Address>
+                </Customer>
+                <VaultId>658b3c2e-d5ae-4204-abe1-a42d860769da</VaultId>
+                <PaymentType>
+                    <Method>CC</Method>
+                    <Detail>CreditCard</Detail>
+                </PaymentType>
+                <!-- Redirect Details -->
+                <Redirect>
+                    <NotifyUrl>http://localhost</NotifyUrl>
+                    <ReturnUrl>http://localhost</ReturnUrl>
+                </Redirect>
+                <!-- Order Details -->
+                <Order>
+                    <MerchantOrderId>utiliapp_41250008624_20210120104336</MerchantOrderId>
+                    <input type="text">
+                    <Currency id="Currency">ZAR</Currency>
+                    <Amount id="Amaount">25000</Amount>
+                    <BillingDetails  id= "Bill details">
+                        <!-- Customer Details -->
+                        <Customer>
+                          
+                            <FirstName id= "First Name"></FirstName>
+                            <LastName id= "Last Name"></LastName>
+                            <Email  id="Email">hannoa@paygate.co.za</Email>
+                            <!-- Address Details -->
+                          </input>
+                            <Address>
+                                <Country>ZAF</Country>
+                            </Address>
+                        </Customer>
+                        <!-- Address Details -->
+                        <Address>
+                            <Country>ZAF</Country>
+                        </Address>
+                    </BillingDetails>
+                    <Locale>en</Locale>
+                </Order>
+			</WebPaymentRequest>
+		</SinglePaymentRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

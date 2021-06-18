@@ -7,7 +7,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
   <h2>Make a Payment:</h2>
   <table border="0">
-    <xsl:for-each select="Order/Customer">
+    <xsl:for-each select="SOAP-ENV:Envelope/Customer">
     <tr>
       
       <td><xsl:value-of select="@id"/></td>

@@ -38,7 +38,7 @@
                     
                         <!-- Customer Details -->
                         <Customer>
-                          <input type="text">
+                       
                             <FirstName id= "FirstName"></FirstName>
                             <LastName id= "LastName"></LastName>
                             <Email  id="Email">hannoa@paygate.co.za</Email>
@@ -61,7 +61,7 @@
                         </Address>
                     </BillingDetails>
                     <Locale>en</Locale>
-	            </input>
+	     
 	         </Customer>	
                 </Order>
 			</WebPaymentRequest>

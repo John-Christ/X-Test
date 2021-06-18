@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-	soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding"	   >
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	
   <?xml-stylesheet type="text/xsl" href="tool.xsl"?>
 
 
@@ -39,8 +39,8 @@
                         <!-- Customer Details -->
                         <Customer>
                           <input type="text">
-                            <FirstName id= "First Name"></FirstName>
-                            <LastName id= "Last Name"></LastName>
+                            <FirstName id= "FirstName"></FirstName>
+                            <LastName id= "LastName"></LastName>
                             <Email  id="Email">hannoa@paygate.co.za</Email>
                             <!-- Address Details -->
 				
@@ -49,7 +49,7 @@
                     
                     <Currency id="Currency">ZAR</Currency>
                     <Amount id="Amaount">25000</Amount>
-                    <BillingDetails  id= "Bill details">
+                    <BillingDetails  id= "Billingdetails">
                           
                             <Address>
                                 <Country>ZAF</Country>

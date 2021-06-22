@@ -6,28 +6,31 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <html>
   <body>
   <h2>Make a Payment:</h2>
-  <table border="0">
-    <xsl:for-each select="SOAP-ENV:Envelope/Customer">
-    <tr>
+    <form method="post" action="https://secure.paygate.co.za/payweb3/initiate.trans">
       
-      <td><xsl:value-of select="@id"/></td>
-   <td>
-      <input type="text">
-      <xsl:attribute name="id">
-        <xsl:value-of select="@id" />
-      </xsl:attribute>
-     
-     
-     
-     
-      </input>
-     </td>
-    </tr>
-    </xsl:for-each>
-  </table>
-  <br />
-  <input type="submit" id="btn_sub" name="btn_sub" value="Submit" />
-
+      <table border="0">
+    <xsl:for-each select="body/details">
+    <tr>
+          <td><xsl:value-of select="PAYGATE_ID"/></td>
+          <td><xsl:value-of select="REFERENCE"/></td>
+          <td><xsl:value-of select="AMOUNT"/></td>
+          <td><xsl:value-of select="RETURN_URL"/></td>
+          <td><xsl:value-of select="TRANSACTION_DATE"/></td>
+          <td><xsl:value-of select="LOCALE"/></td>
+          <td><xsl:value-of select="COUNTRY"/></td>
+          <td><xsl:value-of select="EMAIL"/></td>
+          <td><xsl:value-of select="CHECKSUM"/></td>
+      
+      <br/>
+       <input type="submit"  value="Submit" />
+      
+      
+      
+ 
+      
+     </tr>
+    </xsl:for-each>  
+      
   </form>
   </body>
   </html>

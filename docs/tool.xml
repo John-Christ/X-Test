@@ -1,70 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-	
-  <?xml-stylesheet type="text/xsl" href="tool.xsl"?>
 
+<?xml-stylesheet type="text/xsl" href="tool.xsl"?>
 
-     <SOAP-ENV:Header/>
-    <SOAP-ENV:Body>
-    	<SinglePaymentRequest xmlns="http://www.paygate.co.za/PayHOST">
-	    	<WebPaymentRequest>
-				 <!-- Account Details -->
-                <Account>
-                    <PayGateId>1042960100019</PayGateId>
-                    <Password>tyrerq</Password>
-                </Account>
-                <!-- Customer Details -->
-                <Customer>
-                    <FirstName ></FirstName>
-                    <LastName></LastName>
-                    <Email>hannoa@paygate.co.za</Email>
-                    <!-- Address Details -->
-                    <Address>
-                        <Country>ZAF</Country>
-                    </Address>
-                </Customer>
-                <VaultId>658b3c2e-d5ae-4204-abe1-a42d860769da</VaultId>
-                <PaymentType>
-                    <Method>CC</Method>
-                    <Detail>CreditCard</Detail>
-                </PaymentType>
-                <!-- Redirect Details -->
-                <Redirect>
-                    <NotifyUrl>http://localhost</NotifyUrl>
-                    <ReturnUrl>http://localhost</ReturnUrl>
-                </Redirect>
-                <!-- Order Details -->
-                <Order>
-                    
-                        <!-- Customer Details -->
-                        <Customer>
-                       
-                            <FirstName id= "FirstName"></FirstName>
-                            <LastName id= "LastName"></LastName>
-                            <Email  id="Email">hannoa@paygate.co.za</Email>
-                            <!-- Address Details -->
-				
+<body>
+<details>
+
+<PAYGATE_ID> 10011072130 </PAYGATE_ID>
+
+<REFERENCE> pgtest_123456789 </REFERENCE>
+
+<AMOUNT> 3299 </AMOUNT>
+
+<RETURN_URL> https://boyoquiz.com/payweb.html</RETURN_URL>
+
+<TRANSACTION_DATE>2021-06-22 12:00:00</TRANSACTION_DATE>
+
+<LOCALE> en-za </LOCALE>
+
+<COUNTRY> ZAF </COUNTRY>
+
+<EMAIL> customer@paygate.co.za </EMAIL>
+
+<CHECKSUM> 59229d9c6cb336ae4bd287c87e6f0220 </CHECKSUM>
+
+</details>
 	
-	            <MerchantOrderId>utiliapp_41250008624_20210120104336</MerchantOrderId>
-                    
-                    <Currency id="Currency">ZAR</Currency>
-                    <Amount id="Amaount">25000</Amount>
-                    <BillingDetails  id= "Billingdetails">
-                          
-                            <Address>
-                                <Country>ZAF</Country>
-                            </Address>
-                       
-                        <!-- Address Details -->
-                        <Address>
-                            <Country>ZAF</Country>
-                        </Address>
-                    </BillingDetails>
-                    <Locale>en</Locale>
-	     
-	         </Customer>	
-                </Order>
-			</WebPaymentRequest>
-		</SinglePaymentRequest>
-	</SOAP-ENV:Body>
-</SOAP-ENV:Envelope>
+</body>
